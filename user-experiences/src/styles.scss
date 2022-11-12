@@ -13,7 +13,7 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $user-experiences-primary: mat.define-palette(mat.$gray-palette, 900);
-$user-experiences-accent: mat.define-palette(mat.$yellow-palette, 800);
+$user-experiences-accent: mat.define-palette(mat.$blue-palette, A700);
 
 // The warn palette is optional (defaults to red).
 $user-experiences-warn: mat.define-palette(mat.$red-palette);
@@ -36,4 +36,4 @@ $user-experiences-theme: mat.define-light-theme((
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
