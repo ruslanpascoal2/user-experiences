@@ -1,6 +1,6 @@
 @import '../../../_variables.scss';
 
-.avatar-container{
+.avatar-container {
     position: relative;
 }
 
@@ -32,12 +32,21 @@
 
     &:hover {
         transition: all .25s;
-       background-color: $accent-color-darken;
+        background-color: $accent-color-darken;
     }
 
-    .icon{
+    .icon {
         color: white;
     }
 
+    label {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    input[type='file'] {
+        display: none;
+    }
 }

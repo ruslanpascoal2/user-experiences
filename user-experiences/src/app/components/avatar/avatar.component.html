@@ -1,10 +1,13 @@
 <div class="avatar-container">
-     <div class="image-container">
-        
-    </div> 
+    <div class="image-container">
 
-    <div class="icon-wrapper">
-            <mat-icon class="icon" fontIcon="photo_camera"></mat-icon>
     </div>
-    
+
+    <label for="avatar-input-file">
+        <div class="icon-wrapper">
+            <input type="file" id="avatar-input-file" (change)="onFileChange($event)" />
+            <mat-icon class="icon" fontIcon="photo_camera"></mat-icon>
+        </div>
+    </label>
+
 </div>
