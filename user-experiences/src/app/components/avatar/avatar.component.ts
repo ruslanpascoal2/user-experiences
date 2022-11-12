@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AvatarComponent implements OnInit {
 
-  file: File | null = null;
+  file: string = ""; //it will be a base64 string
 
   constructor() { }
 
@@ -18,8 +18,9 @@ export class AvatarComponent implements OnInit {
     const files = event.target.files as FileList;
     
     if(files.length > 0){
-      this.file = files[0];
+      this.file = URL.createObjectURL(files[0]);
     }
   }
+
  
 }
