@@ -20,6 +20,7 @@ export class AvatarComponent implements OnInit {
 
     if (files.length > 0) {
       const _file = URL.createObjectURL(files[0]);
+      this.resetInput();
       this.openAvatarEditor(_file)
       .subscribe(
         (result) => {
@@ -39,5 +40,12 @@ export class AvatarComponent implements OnInit {
     });
 
     return dialogRef.afterClosed();
+  }
+
+  resetInput(){
+    const input = document.getElementById('avatar-input-file') as HTMLInputElement;
+    if(input){
+      input.value = "";
+    }
   }
 }
