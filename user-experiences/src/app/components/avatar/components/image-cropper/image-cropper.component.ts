@@ -28,10 +28,13 @@ export class ImageCropperComponent implements OnInit {
   }
 
   initCropper() {
+    
     const image = document.getElementById('image') as HTMLImageElement;
     this.cropper = new Cropper(image, {
       aspectRatio: 1,
       viewMode: 1,
+      guides: false,
+      
     });
   }
 
