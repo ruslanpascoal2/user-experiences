@@ -23,7 +23,9 @@ export class AvatarComponent implements OnInit {
       this.openAvatarEditor(_file)
       .subscribe(
         (result) => {
-          console.log(result);
+          if(result){
+            this.file = result;
+          }
         }
       )
     }
