@@ -1,0 +1,55 @@
+@import '../../../_variables.scss';
+
+.avatar-container {
+    position: relative;
+}
+
+.image-container {
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: black;
+    background-position: center;
+    background-size: cover;
+
+    &.avatar-placeholder{
+        background-image: url('~src/assets/img/avatar-placeholder.png');
+    }
+}
+
+.icon-wrapper {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    padding: .35rem;
+    background-color: $accent-color;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 75%;
+    z-index: 2;
+    cursor: pointer;
+
+    &:hover {
+        transition: all .25s;
+        background-color: $accent-color-darken;
+    }
+
+    .icon {
+        color: white;
+    }
+
+    label {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input[type='file'] {
+        display: none;
+    }
+}
