@@ -4,12 +4,16 @@
     position: relative;
 }
 
+.box-shadow-avatar{
+    box-shadow: 0 10px 20px 20px #6c93001a;
+}
+
 .image-container {
     height: 200px;
     width: 200px;
     z-index: 1;
     border-radius: 50%;
-    background-color: black;
+    background-color: #fff;
     background-position: center;
     background-size: cover;
 
