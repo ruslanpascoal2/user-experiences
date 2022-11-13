@@ -1,0 +1,29 @@
+.form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-width: 500px;
+}
+
+form {
+    margin-top: 3rem;
+    width: 100%;
+
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & >* {
+            width: 100%;
+            margin-right: 1rem;
+        }
+
+        :last-of-type {
+            margin-right: 0rem;
+        }
+    }
+
+
+}
