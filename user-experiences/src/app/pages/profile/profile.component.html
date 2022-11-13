@@ -1,7 +1,6 @@
-<div class="form-container">
-    <app-avatar></app-avatar>
-    <form [formGroup]="form">
-        <div class="row">
+<form [formGroup]="form">
+        <app-avatar formControlName="avatar"></app-avatar>
+        <div class="row margin-top">
             <mat-form-field appearance="fill">
                 <mat-label>First name</mat-label>
                 <input type="text" matInput formControlName="name">
@@ -21,4 +20,3 @@
             <button mat-flat-button color="primary" type="submit">Save</button>
         </div>
     </form>
-</div>
