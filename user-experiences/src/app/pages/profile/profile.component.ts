@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-profile',
@@ -19,6 +19,10 @@ export class ProfileComponent implements OnInit {
       email: '',
       avatar: ''
     })
+  }
+
+  submit(){
+    console.log(this.form.value);
   }
 
 }
