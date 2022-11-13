@@ -1,0 +1,22 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+        <app-avatar formControlName="avatar"></app-avatar>
+        <div class="row margin-top">
+            <mat-form-field appearance="fill">
+                <mat-label>First name</mat-label>
+                <input type="text" matInput formControlName="name">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Last name</mat-label>
+                <input type="text" matInput formControlName="lastName">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input type="email" matInput formControlName="email">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <button mat-flat-button color="primary" type="submit">Save</button>
+        </div>
+</form>
