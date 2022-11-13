@@ -36,9 +36,7 @@ export class AvatarComponent implements OnInit, ControlValueAccessor {
     this.disabled = isDisabled;
   }
 
-  onChange = (fileUrl: string) => {
-    console.log(fileUrl);
-  };
+  onChange = (fileUrl: string) => {};
 
   onTouched = () => {};
 
