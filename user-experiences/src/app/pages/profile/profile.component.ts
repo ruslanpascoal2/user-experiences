@@ -17,12 +17,14 @@ export class ProfileComponent implements OnInit {
       name: '',
       lastName: '',
       email: '',
-      avatar: ''
+      avatar: ['', Validators.required]
     })
   }
 
   submit(){
-    console.log(this.form.value);
+    console.log('is form valid??? ', this.form.valid);
+    console.log(this.form.controls['avatar']);
+    
   }
 
 }
