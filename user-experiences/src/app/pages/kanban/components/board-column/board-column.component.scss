@@ -1,0 +1,44 @@
+.board-column{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.title-bar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    .qty{
+        font-size: 16px;
+        margin-left: .5rem;
+        font-size: 500;
+        color: gray;
+    }
+}
+.column-title{
+    font-weight: 500;
+    font-size: 16px;
+    color: #2a2a2a;
+}
+
+mat-icon{
+    color: gray;
+    cursor: pointer;
+    transition: all .25s;
+    &:hover{
+        color: darken(gray, 15%);
+    }
+}
+
+:host{
+    .board-column{
+        :last-of-type{
+            margin-right: 0;
+        }
+    }
+}

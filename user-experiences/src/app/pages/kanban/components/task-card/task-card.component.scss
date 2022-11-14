@@ -1,0 +1,31 @@
+@import "../../../../../_variables.scss";
+
+.task-card {
+     cursor: pointer;
+     display: flex;
+     flex-direction: column;
+    
+     &:hover {
+         background: darken(white, 5%);
+     }
+
+     &.blocked{
+        background: $danger-color;
+     }
+ }
+
+ .task-title{
+   font-weight: 500;
+   color: #2a2a2a;
+   margin-bottom: .5rem;
+ }
+ .task-description{
+   font-weight: 400;
+   font-size: 12px;
+   color: #a2a2a2;
+   margin-bottom: 1rem;
+ }
+
+ :host{
+    margin-bottom: 1rem;
+ }

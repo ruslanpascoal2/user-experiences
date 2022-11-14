@@ -1,0 +1,11 @@
+<section class="kanban-container" *ngIf="data$ | async as data; else loading">
+    <app-board>
+        <app-board-column *ngFor="let col of data?.board?.columns; let i = index" [column]="col">
+            <app-task-card *ngFor="let task of data?.tasks | filterTasksByColumn: i" [task]="task"></app-task-card>
+        </app-board-column>
+    </app-board>
+</section>
+
+<ng-template #loading>
+    loading...
+</ng-template>

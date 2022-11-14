@@ -1,0 +1,8 @@
+<mat-card class="task-card" [ngClass]="{'blocked': task?.blocked}">
+
+        <span class="task-title">{{task?.name}}</span>
+        <span class="task-description">{{task?.description}}</span>
+        <div class="task-tags">
+            <app-task-tag *ngFor="let tag of task?.tags" [tag]="tag"></app-task-tag>
+        </div>
+</mat-card>

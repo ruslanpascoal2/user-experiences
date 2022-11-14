@@ -1,0 +1,41 @@
+{
+  "tasks": [
+    {
+      "id": "18c66a12-cf65-4de3-85c3-8cbdf372893e",
+      "description": "Build an interactive dashboard so the managers can see what's going on.",
+      "name": "Create a dashboard",
+      "status": 1,
+      "boardId": "69c55ae0-600e-4672-a3c2-de08b8c0ce54",
+      "columnIndex": 1,
+      "tags": [{ "text": "Front-end", "color": "#7cdfff" }]
+    },
+    {
+      "id": "4e4ecbd8-66db-496e-9011-1cb765552567",
+      "description": "Create some unit tests to guarantee the dashboard is working properly.",
+      "name": "Write unit tests for the dashboard",
+      "status": 0,
+      "boardId": "69c55ae0-600e-4672-a3c2-de08b8c0ce54",
+      "columnIndex": 0,
+      "tags": [{ "text": "Front-end", "color": "#7cdfff" }]
+    }
+  ],
+  "boards": [
+    {
+      "id": "69c55ae0-600e-4672-a3c2-de08b8c0ce54",
+      "columns": [
+        {
+          "index": 0,
+          "name": "TO DO"
+        },
+        {
+          "index": 1,
+          "name": "DOING"
+        },
+        {
+          "index": 1,
+          "name": "DONE"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.tag-container{
+    width: fit-content;
+    border-radius: 6px;
+    padding: .25rem .5rem;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .25s;
+    &:hover{
+        filter: brightness(90%);
+    }
+}
