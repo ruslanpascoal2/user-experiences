@@ -10,3 +10,10 @@
         filter: brightness(90%);
     }
 }
+
+:host{
+    margin-right: .5rem;
+    :last-of-type{
+        margin-right: 0;
+    }
+}

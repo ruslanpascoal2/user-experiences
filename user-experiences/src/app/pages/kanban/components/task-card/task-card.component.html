@@ -2,6 +2,7 @@
 
         <span class="task-title">{{task?.name}}</span>
         <span class="task-description">{{task?.description}}</span>
+        <app-task-status [status]="task?.status || 0"></app-task-status>
         <div class="task-tags">
             <app-task-tag *ngFor="let tag of task?.tags" [tag]="tag"></app-task-tag>
         </div>

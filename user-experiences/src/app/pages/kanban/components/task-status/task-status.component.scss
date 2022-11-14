@@ -1,0 +1,31 @@
+.status-container {
+  display: flex;
+  align-items: center;
+  color: #656565;
+  font-size: 14px;
+}
+
+:host{
+  margin-bottom: .75rem;
+}
+
+.status {
+  margin-right: .25rem;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+
+  &.new {
+    background-color: lightgray;
+  }
+
+  &.closed {
+    background-color: green;
+  }
+
+  &.progress {
+    background-color: orange;
+
+  }
+
+}

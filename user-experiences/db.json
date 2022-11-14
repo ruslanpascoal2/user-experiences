@@ -7,7 +7,7 @@
       "status": 1,
       "boardId": "69c55ae0-600e-4672-a3c2-de08b8c0ce54",
       "columnIndex": 1,
-      "tags": [{ "text": "Front-end", "color": "#7cdfff" }]
+      "tags": [{ "text": "UI/UX", "color": "#fed5e3" }, { "text": "Dev" }]
     },
     {
       "id": "4e4ecbd8-66db-496e-9011-1cb765552567",
@@ -16,7 +16,7 @@
       "status": 0,
       "boardId": "69c55ae0-600e-4672-a3c2-de08b8c0ce54",
       "columnIndex": 0,
-      "tags": [{ "text": "Front-end", "color": "#7cdfff" }]
+      "tags": [{ "text": "Front-end", "color": "#d8f1ff" }]
     }
   ],
   "boards": [

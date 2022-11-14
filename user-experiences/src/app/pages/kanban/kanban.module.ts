@@ -11,6 +11,7 @@ import {MatCardModule} from '@angular/material/card';
 import { BoardComponent } from './components/board/board.component';
 import { TaskTagComponent } from './components/task-tag/task-tag.component';
 import { FilterTasksByColumnPipe } from './pipes/filter-tasks-by-column.pipe';
+import { TaskStatusComponent } from './components/task-status/task-status.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { FilterTasksByColumnPipe } from './pipes/filter-tasks-by-column.pipe';
     BoardComponent,
     TaskTagComponent,
     FilterTasksByColumnPipe,
+    TaskStatusComponent,
   ],
   imports: [
     CommonModule,
