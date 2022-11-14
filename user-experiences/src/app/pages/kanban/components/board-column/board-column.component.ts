@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { KanbanColumn, KanbanTask } from '../../models/kanban.models';
+import { AfterContentInit, Component, ContentChildren, Input, OnInit, QueryList } from '@angular/core';
+import { KanbanColumn } from '../../models/kanban.models';
+import { TaskCardComponent } from '../task-card/task-card.component';
 
 @Component({
   selector: 'app-board-column',
@@ -11,9 +12,12 @@ export class BoardColumnComponent implements OnInit {
 
   @Input() column!: KanbanColumn;
 
+  @ContentChildren(TaskCardComponent) content!: QueryList<TaskCardComponent>;
+
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
