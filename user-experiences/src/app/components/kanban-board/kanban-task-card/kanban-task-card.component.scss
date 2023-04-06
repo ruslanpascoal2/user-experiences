@@ -1,0 +1,13 @@
+.kanban-task{
+  padding: 1.5rem;
+  border-radius: .5rem;
+  background-color: #fff;
+  min-width: 300px;
+  min-height: 200px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+
+  &:hover{
+    box-shadow: 0 0 20px 2px #75757520;
+  }
+}

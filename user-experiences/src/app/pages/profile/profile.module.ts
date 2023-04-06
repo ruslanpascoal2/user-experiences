@@ -4,9 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ProfileRoutingModule } from './profile-routing.module';
 import { ProfileComponent } from './profile.component';
 import { AvatarModule } from 'src/app/components/avatar/avatar.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
-import { MatButtonModule } from '@angular/material/button';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -17,10 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
     CommonModule,
     ProfileRoutingModule,
     AvatarModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatInputModule,
-    MatButtonModule
+    SharedModule
   ]
 })
 export class ProfileModule { }

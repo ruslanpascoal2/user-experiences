@@ -1,0 +1,8 @@
+<div class="kanban-column-wrapper">
+  <div class="kanban-column-header" [ngStyle]="{'border-color': column.color, 'color': column.color }">
+    <h4>{{column.name}}</h4>
+  </div>
+  <div class="kanban-column">
+    <ng-content></ng-content>
+  </div>
+</div>

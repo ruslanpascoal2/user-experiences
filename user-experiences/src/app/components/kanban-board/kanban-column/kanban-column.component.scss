@@ -1,0 +1,30 @@
+
+$background: #fff;
+
+.kanban-column-wrapper{
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.kanban-column{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.kanban-column-header{
+  padding: 2rem;
+  background-color: $background;
+  border-bottom: 8px solid;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h4{
+    padding: 0;
+    margin: 0;
+  }
+}

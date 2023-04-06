@@ -1,0 +1,16 @@
+.component-info{
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 400px;
+
+  span{
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .component-info{
+    display: none;
+  }
+}

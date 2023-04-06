@@ -1,22 +1,42 @@
+<app-component-info>
+  <p>#1 - Avatar uploader with image preview and editor</p>
+  <p>
+    Click on the edit icon and choose an avatar! <br />
+    You can position your photo inside the circle as you want.
+  </p>
+  <p>
+    The app-avatar component acts like a form control, and its value is a base64
+    of the image
+  </p>
+  <p>
+    <a
+      href="https://medium.com/@ruslan.ap2/how-to-create-an-avatar-uploader-with-angular-9fe89ff4fe60"
+      target="_blank"
+    >
+      Step by step on Medium
+    </a>
+  </p>
+</app-component-info>
+
 <form [formGroup]="form" (ngSubmit)="submit()">
-        <app-avatar formControlName="avatar"></app-avatar>
-        <div class="row margin-top">
-            <mat-form-field appearance="fill">
-                <mat-label>First name</mat-label>
-                <input type="text" matInput formControlName="name">
-            </mat-form-field>
-            <mat-form-field appearance="fill">
-                <mat-label>Last name</mat-label>
-                <input type="text" matInput formControlName="lastName">
-            </mat-form-field>
-        </div>
-        <div class="row">
-            <mat-form-field appearance="fill">
-                <mat-label>Email</mat-label>
-                <input type="email" matInput formControlName="email">
-            </mat-form-field>
-        </div>
-        <div class="row">
-            <button mat-flat-button color="primary" type="submit">Save</button>
-        </div>
+  <app-avatar formControlName="avatar"></app-avatar>
+  <div class="row margin-top">
+    <mat-form-field appearance="fill">
+      <mat-label>First name</mat-label>
+      <input type="text" matInput formControlName="name" />
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Last name</mat-label>
+      <input type="text" matInput formControlName="lastName" />
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput formControlName="email" />
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <button mat-flat-button color="primary" type="submit">Save</button>
+  </div>
 </form>

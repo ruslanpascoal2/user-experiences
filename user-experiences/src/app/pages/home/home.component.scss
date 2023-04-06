@@ -1,0 +1,24 @@
+.menu{
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul, li{
+    list-style: none;
+  }
+
+  li{
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: #111;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    color: #fff;
+
+    &:hover{
+      background-color: gray;
+      transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    }
+  }
+}

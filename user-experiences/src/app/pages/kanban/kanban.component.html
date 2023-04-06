@@ -1,0 +1,14 @@
+<app-component-info>
+  <p>#2 - Kanban board</p>
+</app-component-info>
+
+<div class="container">
+  <app-kanban-board *ngFor="let kanban of kanbans" [kanban]="kanban">
+    <app-kanban-column *ngFor="let kanbanCol of kanban.columns" [column]="kanbanCol">
+      <app-kanban-task-card
+        *ngFor="let kanbanTask of kanbanCol.tasks"
+        [task]="kanbanTask"
+      ></app-kanban-task-card>
+    </app-kanban-column>
+  </app-kanban-board>
+</div>

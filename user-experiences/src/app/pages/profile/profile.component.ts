@@ -10,6 +10,8 @@ export class ProfileComponent implements OnInit {
 
   form!: FormGroup;
 
+
+
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
@@ -24,7 +26,10 @@ export class ProfileComponent implements OnInit {
   submit(){
     console.log('is form valid??? ', this.form.valid);
     console.log(this.form.controls['avatar']);
-    
+  }
+
+  get formValues(){
+    return this.form.value;
   }
 
 }
