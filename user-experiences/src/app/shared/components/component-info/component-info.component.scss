@@ -1,11 +1,20 @@
 .component-info{
   position: absolute;
-  left: 5%;
-  top: 5%;
+  right: 5%;
+  bottom: 5%;
   width: 400px;
-
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 10px 0px rgba(128, 128, 128, 0.303);
   span{
     font-family: 'Courier New', Courier, monospace;
+  }
+  .close-btn{
+    float: right;
+    padding: 1rem;
+    cursor: pointer;
   }
 }
 

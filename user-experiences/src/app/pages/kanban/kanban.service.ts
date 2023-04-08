@@ -70,6 +70,6 @@ export class KanbanService {
   constructor() {}
 
   getKanbans(): Observable<Kanban[]> {
-    return of(kanbanData).pipe(delay(1000));
+    return of(kanbanData);
   }
 }

@@ -1,4 +1,7 @@
-<div class="component-info">
+<div class="component-info" [ngStyle]="{display: hide && 'none'}">
+  <a class="close-btn" (click)="close()">
+    <mat-icon>close</mat-icon>
+  </a>
   <span>
     <ng-content></ng-content>
   </span>
